@@ -77,11 +77,11 @@ namespace csharp_basics
 
             Console.WriteLine("----------------------------------");
 
-            var text = System.IO.File.ReadAllText("C:\\Users\\jebas\\OneDrive\\Desktop\\sample\\File.txt");
+            var text = System.IO.File.ReadAllText("D:\\c_sharp_learning\\file_sample.txt");
             Console.WriteLine(text);
 
 
-            using (StreamWriter sw = System.IO.File.AppendText("C:\\Users\\jebas\\OneDrive\\Desktop\\sample\\File.txt"))
+            using (StreamWriter sw = System.IO.File.AppendText("D:\\c_sharp_learning\\file_sample.txt"))
             {
                 sw.WriteLine("Gfg");
                 sw.WriteLine("GFG");
