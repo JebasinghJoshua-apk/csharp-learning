@@ -14,6 +14,11 @@ namespace csharp_basics
             tata.color = "silver";
             tata.Accelerate();
             Console.WriteLine(tata.color);
+
+
+            //Inheritance & Access Specifiers
+            MarutiSwift JebaCar = new MarutiSwift();
+            JebaCar.StartEngine();
         }
     }
 }
