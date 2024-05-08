@@ -25,7 +25,13 @@ namespace csharp_basics
             School school = new School();
             Console.WriteLine(school.SchoolName);
 
+            //Properties
+            var company = new Company();
+            company.CompanyName = "Microsoft";
+            Console.WriteLine(company.CompanyName);
 
+
+            
         }
     }
 }
