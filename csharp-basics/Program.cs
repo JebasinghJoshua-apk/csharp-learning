@@ -15,10 +15,17 @@ namespace csharp_basics
             tata.Accelerate();
             Console.WriteLine(tata.color);
 
-
             //Inheritance & Access Specifiers
             MarutiSwift JebaCar = new MarutiSwift();
             JebaCar.StartEngine();
+
+            //Constructor
+            //Default Constructor
+            //Parameterized Constructor
+            School school = new School();
+            Console.WriteLine(school.SchoolName);
+
+
         }
     }
 }
