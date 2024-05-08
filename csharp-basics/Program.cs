@@ -30,8 +30,15 @@ namespace csharp_basics
             company.CompanyName = "Microsoft";
             Console.WriteLine(company.CompanyName);
 
+            //Polymorphism & Overide
 
-            
-        }
+            Console.WriteLine("----------------------------------");
+            Animal pig = new Pig();
+            pig.AnimalSound();
+
+            Animal dog = new Dog();
+            dog.AnimalSound();
+            Console.WriteLine("----------------------------------");
+        } 
     }
 }
