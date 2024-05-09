@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Diagnostics.Contracts;
+using System.IO;
+using static System.Net.WebRequestMethods;
 
 namespace csharp_basics
 {
@@ -44,7 +47,7 @@ namespace csharp_basics
             //Abstract method: can only be used in an abstract class, and it does not have a body.The body is provided by the derived class (inherited from).
             //An abstract class can have both abstract and regular methods:
             Console.WriteLine("----------------------------------");
-            
+
             Duck duck = new Duck();
             duck.Sleep();
             duck.BirdSound();
@@ -54,6 +57,36 @@ namespace csharp_basics
             sparrow.BirdSound();
 
             Console.WriteLine("----------------------------------");
-        } 
+
+            //Interfaces
+            //Class or abstract class - Inhertiance
+            //Interface - Implementation
+            //An interface defines a contract.
+            //Any class , record or struct that implements that contract must provide an implementation of the
+            //members defined in the interface. An interface may define a default implementation for members.
+            Console.WriteLine("----------------------------------");
+            IFish tunaFish = new TunaFish();
+
+            tunaFish.Swim();
+
+            Console.WriteLine("----------------------------------");
+
+
+            //Enum
+            var currentWorkingPart = CarParts.Engine;
+
+            Console.WriteLine("----------------------------------");
+
+            var text = System.IO.File.ReadAllText("C:\\Users\\jebas\\OneDrive\\Desktop\\sample\\File.txt");
+            Console.WriteLine(text);
+
+
+            using (StreamWriter sw = System.IO.File.AppendText("C:\\Users\\jebas\\OneDrive\\Desktop\\sample\\File.txt"))
+            {
+                sw.WriteLine("Gfg");
+                sw.WriteLine("GFG");
+                sw.WriteLine("GeeksforGeeks");
+            }
+        }
     }
 }
